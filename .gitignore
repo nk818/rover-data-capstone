@@ -32,3 +32,4 @@ Thumbs.db
 
 # Keep .bag files - they are the main data files
 # !*.bag
+*.bag
