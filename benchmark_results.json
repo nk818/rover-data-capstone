@@ -1,0 +1,142 @@
+{
+  "model_loading": {
+    "load_time_seconds": 0.0948948860168457,
+    "num_models": 4,
+    "total_size_mb": 3.125,
+    "models_per_second": 42.15190267776834
+  },
+  "prediction_speed": {
+    "cmd_vel.linear.x": {
+      "avg_latency_ms": 27.3080313205719,
+      "std_latency_ms": 3.479544573791935,
+      "min_latency_ms": 15.71512222290039,
+      "max_latency_ms": 32.60636329650879,
+      "p95_latency_ms": 29.908061027526852,
+      "p99_latency_ms": 30.963928699493408,
+      "throughput_per_sec": 36.619263697953656,
+      "successful_predictions": 200,
+      "total_samples": 200
+    },
+    "odometry.twist.twist.linear.x": {
+      "avg_latency_ms": 27.537449598312378,
+      "std_latency_ms": 6.60688545299396,
+      "min_latency_ms": 14.630317687988281,
+      "max_latency_ms": 97.15986251831055,
+      "p95_latency_ms": 30.525290966033932,
+      "p99_latency_ms": 36.36467218399038,
+      "throughput_per_sec": 36.31418357861596,
+      "successful_predictions": 200,
+      "total_samples": 200
+    },
+    "imu.linear_acceleration.x": {
+      "avg_latency_ms": 27.391804456710815,
+      "std_latency_ms": 3.659817460594387,
+      "min_latency_ms": 15.245914459228516,
+      "max_latency_ms": 32.98521041870117,
+      "p95_latency_ms": 30.38351535797119,
+      "p99_latency_ms": 30.902960300445553,
+      "throughput_per_sec": 36.50726996026749,
+      "successful_predictions": 200,
+      "total_samples": 200
+    },
+    "joint_states.velocity_0": {
+      "avg_latency_ms": 28.043713569641113,
+      "std_latency_ms": 10.215533360000126,
+      "min_latency_ms": 14.764070510864258,
+      "max_latency_ms": 135.28990745544434,
+      "p95_latency_ms": 35.290861129760735,
+      "p99_latency_ms": 48.05036544799771,
+      "throughput_per_sec": 35.65861552239486,
+      "successful_predictions": 200,
+      "total_samples": 200
+    }
+  },
+  "prediction_accuracy": {
+    "cmd_vel.linear.x": {
+      "mae": 0.022570828079937374,
+      "rmse": 0.06304373053445221,
+      "mape": 9677719222.380547,
+      "r2_score": 0.9253963029626782,
+      "coverage_pct": 95.5,
+      "num_samples": 200
+    },
+    "odometry.twist.twist.linear.x": {
+      "mae": 1.9106872214712608e-05,
+      "rmse": 1.910704133095619e-05,
+      "mape": 132.4484689138131,
+      "r2_score": -719.8410514421039,
+      "coverage_pct": 100.0,
+      "num_samples": 200
+    },
+    "imu.linear_acceleration.x": {
+      "mae": 0.00426474175804892,
+      "rmse": 0.005285946898277294,
+      "mape": 247.39260783276268,
+      "r2_score": -0.15530336704307346,
+      "coverage_pct": 100.0,
+      "num_samples": 200
+    },
+    "joint_states.velocity_0": {
+      "mae": 0.00027033202837545463,
+      "rmse": 0.00027033251232650427,
+      "mape": 312.1501437635239,
+      "r2_score": -95947.4946853985,
+      "coverage_pct": 100.0,
+      "num_samples": 200
+    }
+  },
+  "anomaly_detection": {
+    "cmd_vel.linear.x": {
+      "precision": 0.5294117647058824,
+      "recall": 1.0,
+      "f1_score": 0.6923076923076924,
+      "true_anomalies": 1,
+      "detected_anomalies": 9,
+      "false_positives": 8,
+      "false_negatives": 0,
+      "avg_detection_time_ms": 15.253223180770874
+    },
+    "odometry.twist.twist.linear.x": {
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0,
+      "true_anomalies": 0,
+      "detected_anomalies": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "avg_detection_time_ms": 15.433086156845093
+    },
+    "imu.linear_acceleration.x": {
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "true_anomalies": 6,
+      "detected_anomalies": 0,
+      "false_positives": 0,
+      "false_negatives": 6,
+      "avg_detection_time_ms": 14.920454025268555
+    },
+    "joint_states.velocity_0": {
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0,
+      "true_anomalies": 0,
+      "detected_anomalies": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "avg_detection_time_ms": 14.912974834442139
+    }
+  },
+  "batch_processing": {},
+  "full_pipeline": {
+    "avg_detection_time_ms": 0.030924081802368168,
+    "std_detection_time_ms": 0.007623685157106579,
+    "p95_detection_time_ms": 0.034809112548828125,
+    "p99_detection_time_ms": 0.0748944282531738,
+    "throughput_per_sec": 32337.257623067726,
+    "falsified_count": 67,
+    "falsified_percentage": 33.5,
+    "avg_confidence": 0.28475,
+    "samples_processed": 200
+  }
+}

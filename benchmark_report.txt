@@ -1,0 +1,118 @@
+================================================================================
+FALSIFICATION DETECTION MODEL - BENCHMARK REPORT
+================================================================================
+Generated: 2025-11-18 19:58:29
+
+================================================================================
+1. MODEL LOADING PERFORMANCE
+================================================================================
+Load Time: 0.0949 seconds
+Models Loaded: 4
+Total Model Size: 3.12 MB
+Loading Rate: 42.15 models/second
+
+================================================================================
+2. PREDICTION SPEED
+================================================================================
+
+cmd_vel.linear.x:
+  Average Latency: 27.308 ms
+  Throughput: 36.6 predictions/second
+  95th Percentile: 29.908 ms
+  99th Percentile: 30.964 ms
+
+odometry.twist.twist.linear.x:
+  Average Latency: 27.537 ms
+  Throughput: 36.3 predictions/second
+  95th Percentile: 30.525 ms
+  99th Percentile: 36.365 ms
+
+imu.linear_acceleration.x:
+  Average Latency: 27.392 ms
+  Throughput: 36.5 predictions/second
+  95th Percentile: 30.384 ms
+  99th Percentile: 30.903 ms
+
+joint_states.velocity_0:
+  Average Latency: 28.044 ms
+  Throughput: 35.7 predictions/second
+  95th Percentile: 35.291 ms
+  99th Percentile: 48.050 ms
+
+================================================================================
+3. PREDICTION ACCURACY
+================================================================================
+
+cmd_vel.linear.x:
+  MAE: 0.022571
+  RMSE: 0.063044
+  R² Score: 0.9254
+  Coverage: 95.5%
+
+odometry.twist.twist.linear.x:
+  MAE: 0.000019
+  RMSE: 0.000019
+  R² Score: -719.8411
+  Coverage: 100.0%
+
+imu.linear_acceleration.x:
+  MAE: 0.004265
+  RMSE: 0.005286
+  R² Score: -0.1553
+  Coverage: 100.0%
+
+joint_states.velocity_0:
+  MAE: 0.000270
+  RMSE: 0.000270
+  R² Score: -95947.4947
+  Coverage: 100.0%
+
+================================================================================
+4. ANOMALY DETECTION PERFORMANCE
+================================================================================
+
+cmd_vel.linear.x:
+  Precision: 0.5294
+  Recall: 1.0000
+  F1 Score: 0.6923
+  Detection Time: 15.253 ms
+
+odometry.twist.twist.linear.x:
+  Precision: 0.0000
+  Recall: 0.0000
+  F1 Score: 0.0000
+  Detection Time: 15.433 ms
+
+imu.linear_acceleration.x:
+  Precision: 0.0000
+  Recall: 0.0000
+  F1 Score: 0.0000
+  Detection Time: 14.920 ms
+
+joint_states.velocity_0:
+  Precision: 0.0000
+  Recall: 0.0000
+  F1 Score: 0.0000
+  Detection Time: 14.913 ms
+
+================================================================================
+5. BATCH PROCESSING PERFORMANCE
+================================================================================
+
+================================================================================
+6. FULL DETECTION PIPELINE
+================================================================================
+Average Detection Time: 0.031 ms
+Throughput: 32337.3 detections/second
+Falsified Detections: 67 (33.5%)
+Average Confidence: 0.2848
+
+================================================================================
+SUMMARY
+================================================================================
+Average Prediction Latency: 27.570 ms
+Best Throughput: 36.6 predictions/sec
+Average R² Score: -24166.6414
+Average F1 Score: 0.1731
+
+================================================================================
